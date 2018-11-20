@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import Headline from "./components/headline/Headline.js";
-import Container from "./components/container/Container.js";
+import Headliner from "./components/Headliner/Headliner.js";
+import EmployeeContainer from "./components/EmpContainer/EmpContainer.js";
+import { Container } from 'semantic-ui-react';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-
-          <Headline />
-          <Container />
-
+        <Container>
+          <Headliner />
+          <EmployeeContainer />
+        </Container>
       </div>
     );
   }
