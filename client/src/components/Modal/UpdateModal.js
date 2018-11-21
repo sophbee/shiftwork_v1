@@ -1,13 +1,12 @@
 import React from 'react';
 import { Button, Header, Icon, Modal } from 'semantic-ui-react';
-import AddForm from '../Form/AddForm.js';
 
-const Modal = ({ buttonText }) => (
-  <Modal trigger={<Button>{buttonText}</Button>} closeIcon>
-    <Header icon='plus square' content='Enter new employee information' />
+const UpdateModal = ({ buttonText, name }) => (
+  <Modal trigger={<Button>{ buttonText }</Button>} closeIcon>
+    <Header icon='archive' content={'Update availability for ' + {name}} />
     <Modal.Content>
       <p>
-        <AddForm />
+        {props.children}
       </p>
     </Modal.Content>
     <Modal.Actions>
@@ -21,4 +20,6 @@ const Modal = ({ buttonText }) => (
   </Modal>
 )
 
-export default Modal;
+export default UpdateModal;
+
+// passing through information that already exists in db - passing props?
