@@ -6,3 +6,5 @@ const List = ({ children }) => (
         {children}
     </List>
 );
+
+export default List;
