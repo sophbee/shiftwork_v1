@@ -1,12 +1,13 @@
 import React from 'react';
 import { Button, Header, Icon, Modal } from 'semantic-ui-react';
+import AddForm from '../Form/AddForm.js';
 
 const Modal = ({ buttonText }) => (
   <Modal trigger={<Button>{buttonText}</Button>} closeIcon>
-    <Header icon='archive' content='Archive Old Messages' />
+    <Header icon='plus square' content='Enter new employee information' />
     <Modal.Content>
       <p>
-        Your inbox is getting full, would you like us to enable automatic archiving of old messages?
+        <AddForm />
       </p>
     </Modal.Content>
     <Modal.Actions>
