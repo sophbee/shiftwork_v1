@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Form } from 'semantic-ui-react';
 
-const AddForm = () => (
+const AddForm = props => (
     <Form>
         <Form.Group widths='equal'>
             <Form.Input
@@ -209,8 +209,6 @@ const AddForm = () => (
             Submit
         </Button>
   </Form>
-)
+);
 
 export default AddForm;
-
-// might be passing props through forms

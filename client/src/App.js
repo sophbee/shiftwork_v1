@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Headliner from "./components/Headliner/Headliner.js";
-import EmployeeContainer from "./components/EmpContainer/EmpContainer.js";
+import NewEmployer from "./pages/NewEmployee/NewEmployee.js";
 import { Container } from 'semantic-ui-react';
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <Container>
           <Headliner />
-          <EmployeeContainer />
+          <NewEmployer />
         </Container>
       </div>
     );
