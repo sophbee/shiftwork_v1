@@ -1,26 +1,16 @@
 import React from 'react';
-import { Button, Form } from 'semantic-ui-react';
+import { Button, Form, List, Input } from 'semantic-ui-react';
 
 const AddForm = props => (
     <Form>
         <Form.Group widths='equal'>
             <Form.Input
                 fluid
-                id='form-subcomponent-shorthand-input-first-name'
-                label='First name'
-                placeholder='First name'
-                name='first-name'
-                value={props.first-name}
-                type='text'
-                onChange={props.handleInputChange}
-            />
-            <Form.Input
-                fluid
-                id='form-subcomponent-shorthand-input-last-name'
-                label='Last name'
-                placeholder='Last name'
-                name='last-name'
-                value={props.last-name}
+                id='form-subcomponent-shorthand-input-empName'
+                label='Employee Name'
+                placeholder='Name'
+                name='empName'
+                value={props.empName}
                 type='text'
                 onChange={props.handleInputChange}
             />
@@ -31,10 +21,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='Start time'
-                            id='sun-start'
+                            id='sunStart'
                             type='text'
-                            value={props.sun-start}
-                            name='sun-start'
+                            value={props.sunStart}
+                            name='sunStart'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -42,10 +32,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='End time' 
-                            id='sun-end'
+                            id='sunEnd'
                             type='text'
-                            value={props.sun-end}
-                            name='sun-end'
+                            value={props.sunEnd}
+                            name='sunEnd'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -56,10 +46,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='Start time' 
-                            id='mon-start'
+                            id='monStart'
                             type='text'
-                            value={props.mon-start}
-                            name='mon-start'
+                            value={props.monStart}
+                            name='monStart'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -67,10 +57,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='End time'
-                            id='mon-end'
+                            id='monEnd'
                             type='text'
-                            value={props.mon-end}
-                            name='mon-end'
+                            value={props.monEnd}
+                            name='monEnd'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -81,10 +71,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='Start time' 
-                            id='tue-start'
+                            id='tueStart'
                             type='text'
-                            value={props.tue-start}
-                            name='tue-start'
+                            value={props.tueStart}
+                            name='tueStart'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -92,10 +82,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='End time' 
-                            id='tue-end'
+                            id='tueEnd'
                             type='text'
-                            value={props.tue-end}
-                            name='tue-end'
+                            value={props.tueEnd}
+                            name='tueEnd'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -106,10 +96,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='Start time' 
-                            id='wed-start'
+                            id='wedStart'
                             type='text'
-                            value={props.wed-start}
-                            name='wed-start'
+                            value={props.wedStart}
+                            name='wedStart'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -117,10 +107,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='End time' 
-                            id='wed-end'
+                            id='wedEnd'
                             type='text'
-                            value={props.wed-end}
-                            name='wed-end'
+                            value={props.wedEnd}
+                            name='wedEnd'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -131,10 +121,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='Start time' 
-                            id='thu-start'
+                            id='thuStart'
                             type='text'
-                            value={props.thu-start}
-                            name='thu-start'
+                            value={props.thuStart}
+                            name='thuStart'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -142,10 +132,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='End time' 
-                            id='thu-end'
+                            id='thuEnd'
                             type='text'
-                            value={props.thu-end}
-                            name='thu-end'
+                            value={props.thuEnd}
+                            name='thuEnd'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -156,10 +146,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='Start time' 
-                            id='fri-start'
+                            id='friStart'
                             type='text'
-                            value={props.fri-start}
-                            name='fri-start'
+                            value={props.friStart}
+                            name='friStart'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -167,10 +157,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='End time' 
-                            id='fri-end'
+                            id='friEnd'
                             type='text'
-                            value={props.fri-end}
-                            name='fri-end'
+                            value={props.friEnd}
+                            name='friEnd'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -181,10 +171,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='Start time' 
-                            id='sat-start'
+                            id='satStart'
                             type='text'
-                            value={props.sat-start}
-                            name='sat-start'
+                            value={props.satStart}
+                            name='satStart'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>
@@ -192,10 +182,10 @@ const AddForm = props => (
                     <Form.Field>
                         <Input 
                             placeholder='End time' 
-                            id='sat-end'
+                            id='satEnd'
                             type='text'
-                            value={props.sat-end}
-                            name='sat-end'
+                            value={props.satEnd}
+                            name='satEnd'
                             onChange={props.handleInputChange}
                         />
                     </Form.Field>

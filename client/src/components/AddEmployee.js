@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import ReactDOM from 'react-dom';
+import AddForm from './AddForm.js';
 
 class AddEmployee extends React.Component {
     state = {
@@ -61,7 +61,9 @@ class AddEmployee extends React.Component {
 
     render() {
         return (
-            
+            <AddForm />
         )
     }
 }
+
+export default AddEmployee;

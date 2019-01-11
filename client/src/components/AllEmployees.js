@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, Grid, Image } from 'semantic-ui-react';
+import { List, Image } from 'semantic-ui-react';
 
 const AllEmployees = props => (
     <List divided relaxed>

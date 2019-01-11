@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Headliner from "./components/Headliner/Headliner.js";
-import NewEmployer from "./pages/NewEmployee/NewEmployee.js";
+import AddEmployee from './components/AddEmployee.js';
 import { Container } from 'semantic-ui-react';
 
 class App extends Component {
@@ -8,8 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <Container>
-          <Headliner />
-          <NewEmployer />
+          <AddEmployee />
         </Container>
       </div>
     );
